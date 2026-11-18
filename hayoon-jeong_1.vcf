@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jeong;Hayoon;;;
+FN:Hayoon Jeong
+ORG:Korea Research Institute of Bioscience & Biotechnology (KRIBB);Nucleic 
+ Acid Therapeutics Research Center
+TITLE:Researcher
+EMAIL;TYPE=INTERNET,WORK,PREF:jhy925@kribb.re.kr
+TEL;TYPE=WORK,VOICE:+82-43-240-6147
+ADR;TYPE=WORK:;;30 Yeongudanji-ro\, Ochang-eup\, Cheongwon-gu;Cheongju-si;C
+ hungcheongbuk-do;28116;Republic of Korea
+item1.URL:https://scholar.google.com/citations?user=KgSXHZ8AAAAJ
+item1.X-ABLabel:Google Scholar
+item2.URL:https://hyjeong925.github.io
+item2.X-ABLabel:Contact page
+URL;TYPE=WORK:https://www.kribb.re.kr
+NOTE;CHARSET=UTF-8:정하윤 (Hayoon Jeong)\nPaper: J Nanobiotechnol 2025\;
+ 23:744 https://doi.org/10.1186/s12951-025-03844-7
+END:VCARD

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hayoon Jeong, Ph.D. · KRIBB</title>
+<meta name="description" content="Hayoon Jeong, Ph.D. — Researcher, Nucleic Acid Therapeutics Research Center, KRIBB. Save contact, read the paper, Google Scholar.">
+<!-- Keeps this contact page out of search results. Delete the next line if you want it to be searchable. -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b74c8">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hayoon Jeong, Ph.D. · KRIBB">
+<meta property="og:description" content="Save contact · Read the paper · Google Scholar">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a8fd8'/%3E%3Cstop offset='1' stop-color='%2314307a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EHJ%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --blue: #0a8fd8;
+    --navy: #14307a;
+    --ink: #0f1b2d;
+    --muted: #5b6579;
+    --line: #e2e8f0;
+    --bg: #f2f5f9;
+    --tint: #e9f3fc;
+    --accent: #0b6cc0;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  sup { font-size: .72em; line-height: 0; }
+  .page { max-width: 480px; margin: 0 auto; min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+
+  /* Header: the digital business card */
+  .hero {
+    background: linear-gradient(140deg, var(--blue) 0%, #135fb5 55%, var(--navy) 100%);
+    color: #fff;
+    padding: calc(28px + env(safe-area-inset-top)) 24px 26px;
+    border-radius: 0 0 28px 28px;
+  }
+  .badge {
+    width: 52px; height: 52px; margin-bottom: 18px;
+    display: grid; place-items: center;
+    border-radius: 15px; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.16);
+    font-weight: 700; font-size: 19px; letter-spacing: .02em;
+  }
+  h1 { margin: 0; font-size: 28px; line-height: 1.2; font-weight: 700; letter-spacing: -.01em; }
+  .ko { display: block; margin-top: 4px; font-size: 17px; font-weight: 500; letter-spacing: .02em; opacity: .85; }
+  .role { margin: 16px 0 0; font-size: 15.5px; font-weight: 600; }
+  .org { margin: 4px 0 0; font-size: 14.5px; line-height: 1.5; opacity: .9; }
+  .save {
+    margin-top: 22px; min-height: 54px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #fff; color: var(--navy); text-decoration: none;
+    font-size: 17px; font-weight: 700;
+    border-radius: 14px; box-shadow: 0 6px 18px rgba(4,22,66,.25);
+  }
+  .save svg { width: 22px; height: 22px; }
+  .save:active { transform: scale(.985); }
+
+  /* Link cards */
+  .links { display: flex; flex-direction: column; gap: 12px; padding: 20px 16px 8px; }
+  .card {
+    display: flex; align-items: center; gap: 14px; padding: 16px;
+    background: #fff; border: 1px solid var(--line); border-radius: 18px;
+    color: inherit; text-decoration: none;
+    box-shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 14px rgba(16,24,40,.05);
+  }
+  .card:active { background: #f7fafd; }
+  .icon {
+    flex: none; width: 44px; height: 44px;
+    display: grid; place-items: center;
+    border-radius: 12px; background: var(--tint); color: var(--accent);
+  }
+  .icon svg { width: 23px; height: 23px; }
+  .body { flex: 1; min-width: 0; }
+  .title { display: block; font-size: 17px; font-weight: 650; }
+  .sub { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+  .chev { flex: none; width: 18px; height: 18px; color: #a3adbd; }
+
+  .paper { align-items: flex-start; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
+  }
+  .oa {
+    padding: 2px 8px; border-radius: 999px; background: #e6f6ee; color: #0f7a4a;
+    font-size: 11.5px; font-weight: 600; letter-spacing: .02em; text-transform: none;
+  }
+  .ptitle { display: block; margin-top: 6px; font-size: 16px; line-height: 1.35; font-weight: 650; }
+  .authors, .journal { display: block; margin-top: 6px; font-size: 13.5px; color: var(--muted); }
+  .journal { margin-top: 2px; }
+  .note { display: block; margin-top: 2px; font-size: 12.5px; color: #7a8496; }
+  .authors b { color: var(--ink); font-weight: 650; }
+  .read { display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; font-size: 14.5px; font-weight: 650; color: var(--accent); }
+  .read svg { width: 16px; height: 16px; }
+
+  footer {
+    margin-top: auto; padding: 24px 24px calc(28px + env(safe-area-inset-bottom));
+    text-align: center; font-size: 13px; line-height: 1.6; color: var(--muted);
+  }
+  footer p { margin: 0; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  a:focus-visible { outline: 3px solid #7cc4f5; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="badge" aria-hidden="true">HJ</div>
+    <h1>Hayoon Jeong, Ph.D.<span class="ko" lang="ko">정하윤</span></h1>
+    <p class="role">Researcher</p>
+    <p class="org">Nucleic Acid Therapeutics Research Center<br>Korea Research Institute of Bioscience &amp; Biotechnology (KRIBB)</p>
+    <a class="save" href="hayoon-jeong.vcf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a7 7 0 0 1 14 0v1"/><path d="M19 8v6M16 11h6"/></svg>
+      Save contact
+    </a>
+  </header>
+
+  <main class="links">
+    <a class="card paper" href="https://doi.org/10.1186/s12951-025-03844-7">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg></span>
+      <span class="body">
+        <span class="eyebrow">Paper <span class="oa">Open access</span></span>
+        <span class="ptitle">Carbon dot-lipidoid nanocarriers for superiorly biocompatible nasal mRNA cancer vaccination</span>
+        <span class="authors">Kim H<sup>†</sup>, <b>Jeong H</b><sup>†</sup>, et al.</span>
+        <span class="journal"><i>J Nanobiotechnol</i> 2025;23:744</span>
+        <span class="note"><sup>†</sup>Equal contribution</span>
+        <span class="read">Read the paper <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></span>
+      </span>
+    </a>
+
+    <a class="card" href="https://scholar.google.com/citations?user=KgSXHZ8AAAAJ">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></span>
+      <span class="body"><span class="title">Google Scholar</span><span class="sub">Publications &amp; citations</span></span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+
+    <a class="card" href="mailto:jhy925@kribb.re.kr">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+      <span class="body"><span class="title">Email</span><span class="sub">jhy925@kribb.re.kr</span></span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </main>
+
+  <footer>
+    <p><a href="tel:+82432406147">Office +82-43-240-6147</a></p>
+    <p>30 Yeongudanji-ro, Ochang-eup, Cheongwon-gu,<br>Cheongju 28116, Republic of Korea</p>
+    <p><a href="https://www.kribb.re.kr">www.kribb.re.kr</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
