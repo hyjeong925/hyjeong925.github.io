@@ -63,6 +63,38 @@
   }
   .save svg { width: 22px; height: 22px; }
   .save:active { transform: scale(.985); }
+  .cardbtn {
+    margin-top: 10px; min-height: 48px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: #fff; text-decoration: none; font-size: 16px; font-weight: 650;
+    border: 1.5px solid rgba(255,255,255,.55); border-radius: 14px; background: rgba(255,255,255,.08);
+  }
+  .cardbtn svg { width: 21px; height: 21px; }
+  .cardbtn:active { background: rgba(255,255,255,.18); }
+
+  /* Business card overlay */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 20;
+    display: none; align-items: center; justify-content: center;
+    padding: calc(20px + env(safe-area-inset-top)) 16px calc(20px + env(safe-area-inset-bottom));
+  }
+  .lightbox:target { display: flex; }
+  .lb-backdrop {
+    position: absolute; inset: 0; background: rgba(6,14,32,.94);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .lb-body { position: relative; width: 100%; max-width: 560px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .lb-body img { display: block; width: 100%; height: auto; border-radius: 12px; background: #fff; box-shadow: 0 12px 36px rgba(0,0,0,.45); }
+  .lb-actions { display: flex; gap: 10px; width: 100%; }
+  .lb-actions a {
+    flex: 1; min-height: 50px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: 700;
+  }
+  .lb-actions svg { width: 20px; height: 20px; }
+  .lb-download { background: #fff; color: var(--navy); }
+  .lb-close { color: #fff; border: 1.5px solid rgba(255,255,255,.45); }
+  .lb-hint { margin: 0; font-size: 13px; color: rgba(255,255,255,.78); text-align: center; }
 
   /* Link cards */
   .links { display: flex; flex-direction: column; gap: 12px; padding: 20px 16px 8px; }
@@ -123,6 +155,10 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a7 7 0 0 1 14 0v1"/><path d="M19 8v6M16 11h6"/></svg>
       Save contact
     </a>
+    <a class="cardbtn" href="#businesscard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2"/><path d="M5 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2"/><path d="M14 10h5M14 14h4"/></svg>
+      View business card
+    </a>
   </header>
 
   <main class="links">
@@ -157,6 +193,23 @@
     <p><a href="https://www.kribb.re.kr">www.kribb.re.kr</a></p>
   </footer>
 
+</div>
+
+<!-- Business card overlay: opens with #businesscard, no JavaScript needed -->
+<div id="businesscard" class="lightbox" role="dialog" aria-modal="true" aria-label="Business card">
+  <a class="lb-backdrop" href="#" aria-label="Close"></a>
+  <div class="lb-body">
+    <img src="business-card.jpg" width="1600" height="903" loading="lazy"
+         alt="Business card of Hayoon Jeong, Researcher, Nucleic Acid Therapeutics Research Center, KRIBB">
+    <div class="lb-actions">
+      <a class="lb-download" href="business-card.jpg" download="Hayoon-Jeong_business-card.jpg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+        Download image
+      </a>
+      <a class="lb-close" href="#">Close</a>
+    </div>
+    <p class="lb-hint">You can also long-press the card to save it to Photos.</p>
+  </div>
 </div>
 </body>
 </html>
